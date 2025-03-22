@@ -1,0 +1,20 @@
+package com.hadleexception;
+
+public class Arthimetic {
+
+	public static void main(String[] args) {
+
+		System.out.println("Main start");
+		try {
+			System.out.println("try start");
+			System.out.println(10/0);
+			System.out.println("try ends");
+		}catch(ArithmeticException a) {
+			
+			System.out.println("Catch Start");
+			System.out.println("Exception has handled bcz of zero");
+			System.out.println("catch ends");
+		}
+	}
+
+}
