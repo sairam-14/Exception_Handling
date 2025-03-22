@@ -1,0 +1,40 @@
+package com.hadleexception;
+
+import java.util.Scanner;
+
+public class Multiple_Catchblocks {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+		try {
+			System.out.println("Enter the first number");
+			int a = sc.nextInt();
+			System.out.println("Enter the second number");
+			int b = sc.nextInt();
+			System.out.println(a / b);
+			int a1[] = { 1, 2, 3, 4, 5 };
+			System.out.println("Enter the Index");
+			int index = sc.nextInt();
+			System.out.println(a1[index]);
+			String s = null;
+			System.out.println(s.length());
+			String s1="Sairam";
+			System.out.println("Enter the index");
+			int i=sc.nextInt();
+			System.out.println(s1.charAt(i));
+		} catch (ArithmeticException a7) {
+			System.out.println(a7.getMessage());
+		} catch (ArrayIndexOutOfBoundsException a8) {
+			System.out.println(a8.getMessage());
+		} catch (NullPointerException a9) {
+			System.out.println(a9.getMessage());
+		}
+		catch (StringIndexOutOfBoundsException a6) {
+			System.out.println(a6.getMessage());
+		}
+
+	}
+
+}
