@@ -1,0 +1,22 @@
+package com.hadleexception;
+
+public class Arthimatic_Msg {
+
+	public static void main(String[] args) {
+		
+		System.out.println("Main start");
+		try {
+			
+			System.out.println("try start");
+			System.out.println(10/0);
+			System.out.println("try ends");
+		} catch (ArithmeticException e) {
+			System.out.println("catch start");
+			System.out.println(e.getMessage()); 
+			System.out.println("catch ends"); 
+		}
+		
+		System.out.println(100/0);
+		System.out.println("Main ends");
+	}
+}
