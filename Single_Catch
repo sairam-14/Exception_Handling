@@ -1,0 +1,36 @@
+package com.hadleexception;
+
+import java.util.Scanner;
+
+public class Singlecatch {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+		try {
+			System.out.println("Enter the First Number");
+			int num1 = sc.nextInt();
+			System.out.println("Enter the second Number");
+			int num2 = sc.nextInt();
+			System.out.println(num1 / num2);
+			int a1[] = { 1, 2, 3, 4, 5 };
+			System.out.println("Enter the index");
+			int index = sc.nextInt();
+			System.out.println(a1[index]);
+			
+			String s = null;
+			System.out.println(s.length());
+			
+			String s1 = "Sairam";
+			System.out.println("Enter the Index");
+			int i = sc.nextInt();
+			System.out.println(s1.charAt(i));
+		} catch (ArithmeticException | NullPointerException | ArrayIndexOutOfBoundsException
+				| StringIndexOutOfBoundsException a) {
+			System.out.println(a.getMessage());
+		}
+
+	}
+
+}
