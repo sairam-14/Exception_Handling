@@ -1,0 +1,19 @@
+package com.hadleexception;
+
+public class Finally_Block {
+
+	public static void main(String[] args) {
+
+		System.out.println("Main Start");
+		
+		try {
+			System.out.println("try called");
+			System.out.println(10/0);
+	}
+		finally {
+			System.out.println("finally called");
+			
+		}
+      System.out.println("Main ends");
+}
+}
