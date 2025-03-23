@@ -1,0 +1,29 @@
+package com.hadleexception;
+
+import java.util.Scanner;
+
+public class Userexption_Thrws {
+
+	public static void main(String[] args) {
+         
+		Scanner sc = new Scanner(System.in);
+		System.out.println("enter the age");
+		int age=sc.nextInt();
+		try {
+			age_valid(age);
+		} catch (Exception e) {
+			System.out.println("Age should be Above 18");
+		}
+		
+	}
+	public static void age_valid(int age)throws ArithmeticException {
+		
+		if(age<18) {
+			throw new ArithmeticException();
+		}else {
+			System.out.println("Age Accepted");
+		}
+		
+	}
+
+}
