@@ -1,0 +1,9 @@
+package com.hadleexception;
+
+public class Userdefindexption extends Exception {
+
+	@Override
+	public String getMessage() {
+		return "Invalid Gmail Id";
+	}
+}
