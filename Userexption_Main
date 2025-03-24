@@ -1,0 +1,28 @@
+package com.hadleexception;
+
+import java.util.Scanner;
+
+public class Userexption_Main {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the Gmail id");
+		String gmail=sc.next();
+		try {
+			mail_valid(gmail);
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
+		
+		
+	}
+     public static void mail_valid(String gmail) throws Userdefindexption {
+    	 
+    	 if(gmail.endsWith("@gmail.com")) {
+    		 System.out.println("Gmail Accepted");
+    	 }else {
+    		 throw new Userdefindexption ();
+    	 }
+     }
+}
